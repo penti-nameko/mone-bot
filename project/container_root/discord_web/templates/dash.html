@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Discord Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+
+        <nav class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-white">My Awesome Bot</h1>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">ダッシュボード</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">設定</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">コマンド一覧</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200">ボットを追加</a>
+            </div>
+        </nav>
+
+        <header class="text-center py-20">
+            <h2 class="text-5xl font-extrabold text-white leading-tight">Discordのサーバーをより良く、より簡単に。</h2>
+            <p class="mt-4 text-xl text-gray-400">My Awesome Botは、モデレーション、自動化、エンターテイメントのための多機能ボットです。</p>
+            <div class="mt-8 space-x-4">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 text-lg">ボットを招待する</a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-8 rounded-full transition-colors duration-200 text-lg">ドキュメント</a>
+            </div>
+        </header>
+
+        <section class="mt-16 text-center" x-data="{ servers: 12345, users: 678901, channels: 234567, online: true }">
+            <h3 class="text-3xl font-bold text-white">ボットの統計</h3>
+            <p class="mt-2 text-gray-400" x-text="online ? '🟢 オンライン' : '🔴 オフライン'"></p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold text-blue-400" x-text="servers.toLocaleString()"></p>
+                    <p class="mt-2 text-gray-400 text-lg">サーバー数</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold text-blue-400" x-text="users.toLocaleString()"></p>
+                    <p class="mt-2 text-gray-400 text-lg">総ユーザー数</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <p class="text-5xl font-extrabold text-blue-400" x-text="channels.toLocaleString()"></p>
+                    <p class="mt-2 text-gray-400 text-lg">チャンネル数</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

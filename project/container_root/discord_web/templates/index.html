@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Discord Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js"></script>
+    <style>
+        .discord-btn {
+            background-color: #5865F2;
+        }
+        .discord-btn:hover {
+            background-color: #4f5bc9;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">My Awesome Bot</h1>
+        <div>
+            <a href="YOUR_DISCORD_OAUTH2_LOGIN_URL" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                ダッシュボードへ
+            </a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?discord-bot,technology')">
+        <div class="bg-gray-900 bg-opacity-75 p-8 md:p-12 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white">
+                あなたのDiscordサーバーを最高のコミュニティに
+            </h2>
+            <p class="mt-4 text-lg md:text-xl text-gray-300">
+                My Awesome Botは、モデレーション、エンターテイメント、そしてコミュニティ運営を自動化する最強のツールです。
+            </p>
+            <a href="YOUR_DISCORD_OAUTH2_LOGIN_URL" class="mt-8 inline-flex items-center discord-btn text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <img src="https://discord.com/assets/f80877960309c4883d6a911765c71a33.svg" alt="Discord Logo" class="w-6 h-6 mr-3">
+                Discordでログイン
+            </a>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center mb-12">主な機能</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg text-center transform transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.5 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM12.5 14a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v1z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-white">高度なモデレーション</h4>
+                <p class="mt-2 text-gray-400">スパムや不適切なコンテンツを自動的に検出し、コミュニティを安全に保ちます。</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transform transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM6 9a2 2 0 11-4 0 2 2 0 014 0zM18 9a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-white">楽しいミニゲーム</h4>
+                <p class="mt-2 text-gray-400">ユーザーが楽しめるインタラクティブなゲームで、サーバーのエンゲージメントを高めます。</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center transform transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 9a2 2 0 11-4 0 2 2 0 014 0zM16 9a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-white">カスタマイズ可能な自動化</h4>
+                <p class="mt-2 text-gray-400">ウェルカムメッセージ、ロールの自動付与など、サーバーの管理を効率化します。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-800 py-16 text-center">
+        <h3 class="text-3xl font-bold text-white">今すぐ始めよう！</h3>
+        <p class="mt-4 text-xl text-gray-400">My Awesome Botをあなたのサーバーに追加して、<br>コミュニティを次のステップへ。</p>
+        <a href="YOUR_DISCORD_OAUTH2_LOGIN_URL" class="mt-8 inline-flex items-center discord-btn text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <img src="https://discord.com/assets/f80877960309c4883d6a911765c71a33.svg" alt="Discord Logo" class="w-6 h-6 mr-3">
+            ボットを招待する
+        </a>
+    </section>
+</body>
+</html>
